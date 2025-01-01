@@ -183,7 +183,7 @@ const BrainNetwork = ({ walletAddress = "" }) => {
 
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 w-fit">
         	<h1 className="text-lg font-bold text-white/80 tracking-widest">
-            CA: ~initializing~
+            CA: JChWzbVpv2GB84k66X9cmepJcpdncyTvV7u2T9KMpump
           </h1>
         </div>
         
