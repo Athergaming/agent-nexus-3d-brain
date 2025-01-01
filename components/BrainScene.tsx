@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { useRef, useMemo, useState, useEffect } from 'react';
 import { IoLogoTwitter } from 'react-icons/io';
 import { FaNewspaper } from 'react-icons/fa';
+import { MessageChat } from './Messages';
 
 interface NeuronProps {
   position: [number, number, number];
@@ -160,14 +161,16 @@ const BrainNetwork = ({ walletAddress = "" }) => {
       <div className="relative w-full h-screen overflow-hidden" style={{
         background: "radial-gradient(circle at center, #000B1A 0%, #000000 100%)"
       }}>
-        {/* Nexus Title at Top */}
         <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
           <h1 className="text-7xl font-bold text-white/80 tracking-widest">
             NEXUS
           </h1>
         </div>
+
+        <div className="absolute top-8 left-8 w-[30vw] h-fit z-10 text-white">
+          <MessageChat pfp="/nexus.png" name="Nexus" route="/api/nexus-message" initialText='Connections are all around us, what connection do you have?' />
+        </div>
   
-        {/* Wallet Input Below Brain */}
         <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 z-10 w-96">
           <input
             type="text"
@@ -178,9 +181,7 @@ const BrainNetwork = ({ walletAddress = "" }) => {
           />
         </div>
         
-        {/* Bottom Content Container */}
         <div className="absolute bottom-0 left-0 right-0 p-8 flex justify-between items-end z-10">
-          {/* Whitepaper Link */}
           <a
             href="/whitepaper.pdf"
             target="_blank"
@@ -193,7 +194,6 @@ const BrainNetwork = ({ walletAddress = "" }) => {
             </span>
           </a>
   
-          {/* Twitter Link */}
           <a
             href="https://x.com/agentnexus_"
             target="_blank"

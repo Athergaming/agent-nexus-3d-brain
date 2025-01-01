@@ -7,3 +7,34 @@ html,
 body{
   background-color: black;
 }
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #222;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #222; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #555; 
+  border-radius: 9999px; 
+  border: 2px solid #222;
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-button:vertical:increment,
+.custom-scrollbar::-webkit-scrollbar-button:vertical:decrement {
+  display: none;
+}
