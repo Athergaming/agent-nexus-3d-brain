@@ -168,7 +168,7 @@ const BrainNetwork = ({ walletAddress = "" }) => {
         </div>
 
         <div className="absolute top-8 left-8 w-[30vw] h-fit z-10 text-white">
-          <MessageChat pfp="/nexus.png" name="Nexus" route="/api/nexus-message" initialText='Connections are all around us, what connection do you have?' />
+          <MessageChat pfp="/nex.PNG" name="Nexus" route="/api/nexus-message" initialText='Connections are all around us, what connection do you have?' />
         </div>
   
         <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 z-10 w-96">
