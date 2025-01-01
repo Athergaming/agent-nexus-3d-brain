@@ -168,7 +168,7 @@ const BrainNetwork = ({ walletAddress = "" }) => {
         </div>
 
         <div className="absolute top-8 left-8 w-[30vw] h-fit z-10 text-white">
-          <MessageChat pfp="/nex.PNG" name="Nexus" route="/api/nexus-message" initialText='Connections are all around us, what connection do you have?' />
+          <MessageChat pfp="/nexus.png" name="Nexus" route="/api/nexus-message" initialText='Connections are all around us, what connection do you have?' />
         </div>
   
         <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 z-10 w-96">
@@ -211,7 +211,6 @@ const BrainNetwork = ({ walletAddress = "" }) => {
           </a>
         </div>
   
-        {/* Three.js Canvas */}
         <Canvas camera={{ position: [0, 7, 8], fov: 75 }}>
           <ambientLight intensity={0.2} />
           <pointLight position={[10, 10, 10]} intensity={1.5} />
