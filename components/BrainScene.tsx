@@ -368,7 +368,7 @@ const BrainScene: React.FC = () => {
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 w-fit">
         <h1 className="text-lg font-bold text-white/80 tracking-widest">
-          CA: ~awaiting~
+          CA: AGUH1TtWtgWTV5tXerqw46Gr4PzzQLxRc3TmdtUepump
         </h1>
       </div>
       
