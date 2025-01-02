@@ -12,7 +12,8 @@ interface NeuronProps {
   position: [number, number, number];
   connections: Array<[number, number, number]>;
   isSelected?: boolean;
-  onSelect?: (wallet: string) => void;
+  onSelect?: (wallet: string, position?: [number, number, number]) => void;
+  setIsInitialLoad?: (value: boolean) => void;
 }
 
 const Signal = ({ start, end }: { start: [number, number, number]; end: [number, number, number] }) => {
@@ -63,14 +64,6 @@ const Signal = ({ start, end }: { start: [number, number, number]; end: [number,
     </mesh>
   );
 };
-
-interface NeuronProps {
-  position: [number, number, number];
-  connections: Array<[number, number, number]>;
-  isSelected?: boolean;
-  onSelect?: (wallet: string, position?: [number, number, number]) => void;
-  setIsInitialLoad: (value: boolean) => void;  // Add this line
-}
 
 // Update the Neuron component to use the new prop
 const Neuron: React.FC<NeuronProps> = ({ 
