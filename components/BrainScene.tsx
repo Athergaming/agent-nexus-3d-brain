@@ -368,7 +368,7 @@ const BrainScene: React.FC = () => {
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 w-fit">
         <h1 className="text-lg font-bold text-white/80 tracking-widest">
-          CA: ~initializing~
+          CA: 6UGvTogVAZvWmbzGd4EFUfb47fpMZR7rVaF7EQtppump
         </h1>
       </div>
       
@@ -386,7 +386,7 @@ const BrainScene: React.FC = () => {
         </a>
 
         <a
-          href="https://x.com/agentnexus_"
+          href="https://x.com/nexus_connect_"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-white/80 hover:text-white transition-colors backdrop-blur-md bg-black/20 p-4 rounded-lg border border-white/10 hover:bg-black/30"
