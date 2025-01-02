@@ -12,7 +12,7 @@ interface NeuronProps {
   position: [number, number, number];
   connections: Array<[number, number, number]>;
   isSelected?: boolean;
-  onSelect?: (wallet: string, position?: [number, number, number]) => void;
+  onSelect?: (wallet: string, position: [number, number, number]) => void; // 'position' is now required
   setIsInitialLoad?: (value: boolean) => void;
 }
 
@@ -99,7 +99,7 @@ const Neuron: React.FC<NeuronProps> = ({
         onClick={(e) => {
           e.stopPropagation();
           const randomWallet = generateRandomWallet();
-          setIsInitialLoad(false);
+          setIsInitialLoad?.(false); 
           onSelect && onSelect(randomWallet, position);
         }}>
         <sphereGeometry args={[0.05, 12, 12]} />
